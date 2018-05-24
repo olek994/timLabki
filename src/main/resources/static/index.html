@@ -14,7 +14,7 @@
     <div class="container">
         <H1>Zadanie: Wylosowanie N (wpisane w polu) liczb, następnie obliczenie sredniej</H1>
         <div ng-controller="first" ng-cloak class="ng-cloak">
-            <input type="text" id="randomNumbersAmountInput" ng-model="amount">
+            <input type="number" id="randomNumbersAmountInput" ng-model="amount">
             <button type="submit" id="randomNumbersAmountButton" ng-click="randomNumbers()">Wylosuj</button>
 
             <p class="number" ng-repeat="(key,value) in numbers track by $index">{{value}}</p>
